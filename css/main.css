@@ -1,0 +1,120 @@
+:root {
+    --color-violet: hsl(257, 40%, 49%);
+    --color-magenta: hsl(300, 69%, 71%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("/images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: var(--color-violet);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: "Poppins";
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.images {
+    width: 100%;
+}
+
+.logo {
+    height: 40px;
+    margin-bottom: 2rem;
+}
+
+.mockup {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+}
+
+.btn__register {
+    display: block;
+    width: 12rem;
+    margin: 2rem auto 0 auto;
+    padding: 0.5rem 3rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #fff;
+    color: var(--color-violet);
+    box-shadow: 0 0.3rem 5px #0005;
+}
+
+.btn__register:hover {
+    background-color: var(--color-magenta);
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 1rem;
+    padding: 0.4rem;
+    border: thin solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icon:hover {
+    border-color: var(--color-magenta);
+    background-color: transparent;
+    color: var(--color-magenta);
+}
+
+.fab {
+    font-style: normal;
+}
+
+ion-icon {
+    font-size: 24px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
