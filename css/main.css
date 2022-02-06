@@ -111,10 +111,50 @@ ion-icon {
     font-size: 24px;
 }
 
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("/images/bg-desktop.svg");
+    }
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .images {
+        width: 50%;
+    }
+
+    .content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3rem;
+        text-align: left;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn__register {
+        margin-left: 0;
+        padding: 1rem 3rem;
+        text-align: center;
+    }
+
+    .footer {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
 }
